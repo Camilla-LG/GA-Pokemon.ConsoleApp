@@ -13,6 +13,7 @@ namespace GA_Pokemon.ConsoleApp
             var PokemonsInstance = new Pokemons();
             var TrainerInstance = new Trainer();
             var ProgramInstance = new Program();
+            var LandscapeInstance = new Landscape();
 
             Console.WriteLine("Hei, Coach!");
             Console.WriteLine("Hva heter du?");
@@ -27,6 +28,8 @@ namespace GA_Pokemon.ConsoleApp
             TrainerInstance.CurrentPokemon = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine($"Du har valgt å begynne spillet med {TrainerInstance.CurrentPokemon}!");
+            Console.WriteLine();
+            LandscapeInstance.SearchMountain();
         }
     }
 }
