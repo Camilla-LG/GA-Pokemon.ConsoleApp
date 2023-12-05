@@ -11,20 +11,22 @@ namespace GA_Pokemon.ConsoleApp
         public void PlayGame()
         {
             var PokemonsInstance = new Pokemons();
+            var TrainerInstance = new Trainer();
+            var ProgramInstance = new Program();
 
             Console.WriteLine("Hei, Coach!");
             Console.WriteLine("Hva heter du?");
-            string CoachName = Console.ReadLine();
+            TrainerInstance.TrainerName = Console.ReadLine();
 
-            Console.WriteLine($"Hei, {CoachName}!");
+            Console.WriteLine($"Hei, {TrainerInstance.TrainerName}!");
             Console.WriteLine("Hvilken Pokemon vil du starte spillet med?");
             Console.WriteLine();
             PokemonsInstance.PokemonCharacters();
             PokemonsInstance.ShowPokemons();
             Console.WriteLine();
-            var StartingPokemon = Console.ReadLine();
+            TrainerInstance.CurrentPokemon = Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine($"Du har valgt å begynne spillet med {StartingPokemon}!");
+            Console.WriteLine($"Du har valgt å begynne spillet med {TrainerInstance.CurrentPokemon}!");
         }
     }
 }
