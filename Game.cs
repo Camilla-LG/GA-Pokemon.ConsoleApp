@@ -23,6 +23,8 @@ namespace GA_Pokemon.ConsoleApp
             PokemonsInstance.ShowPokemons();
             Console.WriteLine();
             var StartingPokemon = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine($"Du har valgt å begynne spillet med {StartingPokemon}!");
         }
     }
 }

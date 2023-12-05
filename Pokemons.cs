@@ -12,11 +12,6 @@ namespace GA_Pokemon.ConsoleApp
         public int Health { get; set; }
         public List<Pokemons> AllPokemons { get; set; }
 
-        //public Pokemons()
-        //{
-        //   PokemonCharacters();
-        //}
-
         public void PokemonCharacters()
         {
             AllPokemons = new List<Pokemons>
