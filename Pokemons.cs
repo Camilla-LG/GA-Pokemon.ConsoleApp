@@ -13,6 +13,7 @@ namespace GA_Pokemon.ConsoleApp
         public int Health { get; set; }
         public string Type { get; set; }
         public static List<Pokemons> AllPokemons { get; set; } = new List<Pokemons>();
+        public static object RandomMountainPokemon { get; internal set; }
 
         //public Pokemons() 
         //{

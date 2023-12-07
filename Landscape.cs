@@ -5,6 +5,7 @@ public class Landscape
     public string Mountain;
     public string Beach;
     public string Forest;
+    public string RandomMountainPokemon;
     Trainer trainer = new Trainer();
         
 
