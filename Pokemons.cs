@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace GA_Pokemon.ConsoleApp
 {
-    internal class Pokemons
+    public class Pokemons
     {
         public string Name { get; set; }
         public int Health { get; set; }
         public string Type { get; set; }
-        public List<Pokemons> AllPokemons { get; set; }
+        public static List<Pokemons> AllPokemons { get; set; } = new List<Pokemons>();
+
+        //public Pokemons() 
+        //{
+        //    AllPokemons = new List<Pokemons>();
+        //}
 
         public void PokemonCharacters()
         {
@@ -40,7 +45,7 @@ namespace GA_Pokemon.ConsoleApp
             }
         }
 
-        public Pokemons GetRandomPokemon(string type)
+        public Pokemons ShowRandomPokemon(string type)
         {
             var random = new Random();
             var PokemonsOfType = AllPokemons.Where(p => p.Type == type).ToList();
@@ -49,9 +54,10 @@ namespace GA_Pokemon.ConsoleApp
             {
                 int randomIndex = random.Next(0, PokemonsOfType.Count);
                 return PokemonsOfType[randomIndex];
-            }
+            } 
             else
             {
+                Console.WriteLine("Det ser ikke ut til at det er noen Pokemon som vil vise seg her.");
                 return null;
             }
         }

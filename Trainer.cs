@@ -1,6 +1,6 @@
 ﻿namespace GA_Pokemon.ConsoleApp
 {
-    internal class Trainer
+    public class Trainer
     {
         public string TrainerName { get; set; }
         public string? CurrentPokemon { get; set; }
@@ -16,5 +16,25 @@
         //    Pokeballs = 5;
         //    HealthPotions = 1;
         //}
+
+        public void CatchAPokemon()
+        {
+
+        }
+
+        public void FightAPokemon()
+        {
+
+        }
+
+        public void GoToBeach()
+        {
+
+        }
+
+        public void GoToForest()
+        {
+
+        }
     }
 }

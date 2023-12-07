@@ -15,7 +15,7 @@ namespace GA_Pokemon.ConsoleApp
             var ProgramInstance = new Program();
             var LandscapeInstance = new Landscape();
 
-            Console.WriteLine("Hei, Coach!");
+            Console.WriteLine("Hei, Trener!");
             Console.WriteLine("Hva heter du?");
             TrainerInstance.TrainerName = Console.ReadLine();
 
